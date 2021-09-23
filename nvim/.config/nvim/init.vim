@@ -126,6 +126,11 @@ nnoremap <leader>glp :cprev<CR>:call search(_search_term)<CR>
 nnoremap <leader>x :!chmod +x %<CR>
 inoremap jk <esc>
 
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
