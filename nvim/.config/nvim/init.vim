@@ -37,7 +37,7 @@ Plug 'nvim-treesitter/playground'
 
 " Snippets
 "Plug 'L3MON4D3/LuaSnip'
-Plug 'rafamadriz/friendly-snippets'
+"Plug 'rafamadriz/friendly-snippets'
 
 Plug 'rust-lang/rust.vim'
 Plug 'darrikonn/vim-gofmt'
@@ -48,21 +48,23 @@ Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-dispatch'
 "Plug 'theprimeagen/vim-be-good'
+Plug 'ThePrimeagen/git-worktree.nvim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-projectionist'
 
 " telescope requirements...
-"Plug 'nvim-lua/popup.nvim'
-"Plug 'nvim-lua/plenary.nvim'
-"Plug 'nvim-telescope/telescope.nvim'
-"Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 Plug 'vim-conf-live/vimconflive2021-colorscheme'
 Plug 'flazz/vim-colorschemes'
 Plug 'chriskempson/base16-vim'
 
 " HARPOON!!
-"Plug 'mhinz/vim-rfc'
+Plug 'mhinz/vim-rfc'
+Plug 'ThePrimeagen/harpoon'
 
 " prettier
 Plug 'sbdchd/neoformat'
@@ -75,9 +77,9 @@ call plug#end()
 
 " Adding local modules
 "let &runtimepath.=',' . expand("$HOME") . '/personal/harpoon/master'
-let &runtimepath.=',' . expand("$HOME") . '/personal/vim-with-me/ui'
-let &runtimepath.=',' . expand("$HOME") . '/personal/git-worktree.nvim/master'
-let &runtimepath.=',' . expand("$HOME") . '/personal/refactoring.nvim/get-locals-2'
+"let &runtimepath.=',' . expand("$HOME") . '/personal/vim-with-me/ui'
+"let &runtimepath.=',' . expand("$HOME") . '/personal/git-worktree.nvim/master'
+"let &runtimepath.=',' . expand("$HOME") . '/personal/refactoring.nvim/get-locals-2'
 
 " let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB' ]
 
