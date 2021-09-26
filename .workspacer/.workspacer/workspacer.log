@@ -1,0 +1,22 @@
+2021-09-23 17:25:37.5491|FATAL|workspacer.Program|exception occurred, quiting workspacer: Microsoft.CodeAnalysis.Scripting.CompilationErrorException: (10,1): error CS0006: Metadata file 'C:\Program Files\workspacer\workspacer.Shared.dll' could not be found
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.ThrowIfAnyCompilationErrors(DiagnosticBag diagnostics, DiagnosticFormatter formatter)
+   at Microsoft.CodeAnalysis.Scripting.ScriptBuilder.CreateExecutor[T](ScriptCompiler compiler, Compilation compilation, Boolean emitDebugInformation, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.GetExecutor(CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, Func`2 catchException, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunAsync(Object globals, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.RunAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.CSharp.Scripting.CSharpScript.EvaluateAsync[T](String code, ScriptOptions options, Object globals, Type globalsType, CancellationToken cancellationToken)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context) in D:\a\workspacer\workspacer\src\workspacer\Config\ConfigHelper.cs:line 70
+   at workspacer.workspacer.Start() in D:\a\workspacer\workspacer\src\workspacer\Workspacer.cs:line 52
+   at workspacer.Program.Run() in D:\a\workspacer\workspacer\src\workspacer\Program.cs:line 129
+   at workspacer.Program.Main(String[] args) in D:\a\workspacer\workspacer\src\workspacer\Program.cs:line 71
+2021-09-23 17:35:06.9022|FATAL|workspacer.Program|exception occurred, quiting workspacer: System.ArgumentException: '0' is not a valid value for 'Interval'. 'Interval' must be greater than 0.
+   at System.Timers.Timer.set_Interval(Double value)
+   at workspacer.FocusIndicator.FocusIndicatorForm..ctor(FocusIndicatorPluginConfig config)
+   at workspacer.FocusIndicator.FocusIndicatorPlugin..ctor(FocusIndicatorPluginConfig config)
+   at workspacer.FocusIndicator.ConfigContextExtensions.AddFocusIndicator(IConfigContext context, FocusIndicatorPluginConfig config)
+   at Submission#0.<>c.<<Initialize>>b__0_0(IConfigContext context)
+   at workspacer.ConfigHelper.DoConfig(IConfigContext context) in D:\a\workspacer\workspacer\src\workspacer\Config\ConfigHelper.cs:line 70
+   at workspacer.workspacer.Start() in D:\a\workspacer\workspacer\src\workspacer\Workspacer.cs:line 52
+   at workspacer.Program.Run() in D:\a\workspacer\workspacer\src\workspacer\Program.cs:line 129
+   at workspacer.Program.Main(String[] args) in D:\a\workspacer\workspacer\src\workspacer\Program.cs:line 71
